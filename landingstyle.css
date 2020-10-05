@@ -1,0 +1,387 @@
+body{
+    font-family:'Montserrat', sans-serif ;
+}
+
+.nav-item > a{
+    color: #6A6A6A;
+    margin-top: 15px;
+}
+
+.mainnav{
+    float: right;
+}
+
+.navcontainer{
+    margin-top: 25px;
+}
+
+.ecxlogo{
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.userintrocontainer{
+    background: url(./landingimg/Rectangle\ 93.png);
+    height: 500px;
+    background-size: cover;
+    width: 100%;
+}
+
+.userintro{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+.word{
+    color: #6F6F6F;
+}
+
+.word1{
+    color: white;
+}
+.upto{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.btn{
+    width: 150px;
+    background-color: #333333;
+    float: left;
+}
+
+.cardbtn{
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid #38AFFE;
+    background: #38AFFE;
+    font-weight: bold;
+    color: white;
+}
+
+.gallerycontainer{
+    text-align: center;
+}
+
+.row-one{
+   
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-two{
+   
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-three{
+   
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.griditem1{
+    
+    width: 50%;
+    height: 430px;
+    border-radius: 20px;
+    margin: 15px;
+    background: #828282;
+    transition: width 1s;
+}
+.griditem2{
+    
+    width: 25%;
+    height: 430px;
+    border-radius: 20px;
+    margin: 15px;
+    background: #828282;
+    transition: width 1s;
+}
+
+.griditem3{
+    
+    width: 25%;
+    height: 430px;
+    border-radius: 20px;
+    margin: 15px;
+    background: #828282;
+    transition: width 1s;
+}
+
+/* .griditem4{
+    
+    width: 50%;
+    height: 371px;
+    border-radius: 20px;
+    margin: 15px;
+    background: #828282;
+    transition: width 1s;
+} */
+
+.griditem5{
+    
+    width: 25%;
+    height: 430px;
+    border-radius: 20px;
+    margin: 15px;
+    background: #828282;
+    transition: width 1s;
+}
+
+.griditem6{
+    
+    width: 25%;
+    height: 430px;
+    border-radius: 20px;
+    margin: 15px;
+    background: #828282;
+    transition: width 1s;
+}
+.griditem7{
+    
+    width: 50%;
+    height: 430px;
+    border-radius: 20px;
+    margin: 15px;
+    background: #828282;
+    transition: width 1s;
+}
+
+/* .griditem6{
+    
+    width: 290px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 0 15px black;
+    transition: width 1s;
+} */
+
+.maingallery{
+    /* width: 80%; */
+    align-items: center;
+}
+
+.testimonialcontainer{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.meetteamcontainer{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.meetteamcontainer > img{
+    width:50%;
+}
+
+.griditem9{
+    
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    margin: 15px;
+    background: #828282;
+    transition: width 1s;
+}
+
+.meetstudentcontainer{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+
+
+.topstd{
+    display: flex;
+    flex-direction: row;
+}
+
+.stdword1{
+    margin-top: 55px;
+    margin-left: 110px;
+
+}
+
+#ecx1{
+    background-image: url(/landingimg/Rectangle\ 93.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#ecx2{
+    background-image: url(/landingimg/Rectangle\ 6.png);
+    background-size: cover;
+    background-position: center;
+}
+#ecx3{
+    background-image: url(/landingimg/Rectangle\ 26.png);
+    background-size: cover;
+    background-position: center;
+}
+#ecx4{
+    background-image: url(/landingimg/Rectangle\ 23.png);
+    background-size: cover;
+    background-position: center;
+}
+#ecx5{
+    background-image: url(/landingimg/Rectangle\ 20.png);
+    background-size: cover;
+    background-position: center;
+}
+#ecx6{
+    background-image: url(/landingimg/Welcome\ Image\ 2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#ecx7{
+    background-image: url(/landingimg/Rectangle\ 17.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.studentmain{
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    width: 100%;
+    justify-content: center;
+}
+
+.ol{
+    color: black;
+}
+
+.stdcard{
+    width: 370px;
+    height: 370px;
+    /* border: 2px solid black; */
+    /* border-radius: 20px; */
+    margin: 15px;
+    position: absolute;
+    box-shadow: -0.41px 1.23px 1.64px 0.41px rgba(64, 123, 255, 0.25);
+    border-radius: 15.0625px;
+}
+
+.userintroing{
+    position: absolute;
+    z-index: 1;
+    margin-right: 310px;
+    margin-top: 20px;
+}
+
+.userintroing > img{
+    border-radius: 100px;
+}
+
+
+.stdcardcont{
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+}
+
+.stdcardbody{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #6F6F6F;
+}
+
+.twittercontainer{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.userintroing2{
+    position: absolute;
+    z-index: 1;
+    margin-right: 250px;
+    margin-top: 30px;
+}
+
+.userintroing2 > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px){
+    .stdcardcont{
+        margin: 10px auto;
+        text-align: center;
+        display: flex;
+        /* border: 2px solid blue; */
+        width: 100%;
+        height: 500px;
+        justify-content: center;
+    }
+    .studentmain{
+        margin: 10px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        width: 100%;
+        justify-content: center;
+    }
+    .userintroing{
+        position: absolute;
+        z-index: 1;
+        margin-right: 310px;
+        margin-top: 20px;
+    }
+}
