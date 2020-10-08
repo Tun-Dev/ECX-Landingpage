@@ -1,5 +1,7 @@
 body{
     font-family:'Montserrat', sans-serif ;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item > a{
@@ -13,6 +15,29 @@ body{
 
 .navcontainer{
     margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.toggle-button{
+    margin-top: 32px;
+    top: .75rem;
+    right: 1rem;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
 }
 
 .ecxlogo{
@@ -20,6 +45,9 @@ body{
     margin-left: 30px;
     margin-top: 5px;
 }
+/* .ecxlogo3{
+    display: none;
+} */
 
 .userintrocontainer{
     background: url(./landingimg/Rectangle\ 93.png);
@@ -41,6 +69,7 @@ body{
 
 .word1{
     color: white;
+    font-size: 23px;
 }
 .upto{
     text-align: center;
@@ -50,19 +79,32 @@ body{
 
 .btn{
     width: 150px;
-    background-color: #333333;
+    background-color: rgba(254, 64, 59, 1);
     float: left;
 }
 
 .cardbtn{
-    width: 200px;
+    width: 211px;
     height: 60px;
     border-radius: 15px;
     outline: none;
-    border: 2px solid #38AFFE;
+    border: none;
     background: #38AFFE;
     font-weight: bold;
     color: white;
+    font-size: 14px;
+}
+
+.cardbtn1{
+    width: 211px;
+    height: 60px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: #38AFFE;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
 }
 
 .gallerycontainer{
@@ -103,7 +145,7 @@ body{
     height: 430px;
     border-radius: 20px;
     margin: 15px;
-    background: #828282;
+    /* background: #828282; */
     transition: width 1s;
 }
 .griditem2{
@@ -112,7 +154,7 @@ body{
     height: 430px;
     border-radius: 20px;
     margin: 15px;
-    background: #828282;
+    /* background: #828282; */
     transition: width 1s;
 }
 
@@ -122,7 +164,7 @@ body{
     height: 430px;
     border-radius: 20px;
     margin: 15px;
-    background: #828282;
+    /* background: #828282; */
     transition: width 1s;
 }
 
@@ -142,7 +184,7 @@ body{
     height: 430px;
     border-radius: 20px;
     margin: 15px;
-    background: #828282;
+    /* background: #828282; */
     transition: width 1s;
 }
 
@@ -152,7 +194,7 @@ body{
     height: 430px;
     border-radius: 20px;
     margin: 15px;
-    background: #828282;
+    /* background: #828282; */
     transition: width 1s;
 }
 .griditem7{
@@ -161,7 +203,7 @@ body{
     height: 430px;
     border-radius: 20px;
     margin: 15px;
-    background: #828282;
+    /* background: #828282; */
     transition: width 1s;
 }
 
@@ -202,7 +244,7 @@ body{
     height: 500px;
     border-radius: 20px;
     margin: 15px;
-    background: #828282;
+    /* background: #828282; */
     transition: width 1s;
 }
 
@@ -258,11 +300,7 @@ body{
     background-position: center;
 }
 
-#ecx7{
-    background-image: url(landingimg/Rectangle\ 17.png);
-    background-size: cover;
-    background-position: center;
-}
+
 
 .studentmain{
     margin: 10px auto;
@@ -338,6 +376,128 @@ body{
     border-radius: 100px;
 }
 
+.aboutcontainer{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.footercontainer{
+    height: 400px;
+    /* border: 2px solid black; */
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.footermain{
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+}
+
+.upperfooter{
+    width: 100%;
+    height: 360px;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomfooter{
+    width: 100%;
+    height: 40px;
+    /* border: 2px solid red; */
+}
+
+.footerword{
+    float: left;
+}
+
+.footerbtn{
+    float: right;
+}
+
+.footerbtn > img{
+    width: 20px;
+    height: 20px;
+}
+
+.ftbtn{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    background: #FE403B;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+.ecxinfo{
+    width: 50%;
+    /* border: 2px solid yellow; */
+    text-align: left;
+    padding-right: 40px;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+}
+
+.quick{
+    width: 25%;
+    /* border: 2px solid purple; */
+    text-align: left;
+}
+
+.quick > p{
+    font-size: 15px;
+}
+
+.quick > a{
+    text-decoration: none;
+    color: slategray;
+}
+
+.contact{
+    width: 25%;
+    /* border: 2px solid green; */
+    text-align: left;
+}
+.contact > p{
+    font-size: 15px;
+    opacity: 50%;
+}
+
+.contact > a{
+    text-decoration: none;
+    color: slategray;
+}
+
+/* .image{
+    display: none;
+}
+.mainnav{
+    display: none;
+} */
+
+.navbar-nav > a{
+    float: right;
+}
+
+.navcontainer2{
+    display: none;
+}
+
+.griditem11{
+    display: none;
+}
 
 
 
@@ -384,4 +544,241 @@ body{
         margin-right: 310px;
         margin-top: 20px;
     }
+    /* Nav bar for mobile testing for 400px max width */
+    .toggle-button{
+        display: flex;
+    }
+    .mainnav{
+        display: none;
+        width: 100%;
+    }
+    .navcontainer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .mainnav ul{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .mainnav li{
+        text-align: center;
+    }
+
+    .mainnav li a{
+        padding: .5rem 1rem;
+    }
+
+    .mainnav.active{
+        display: flex;
+    }
+    .navcontainer{
+        display: none;
+    }
+    .navcontainer2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .toggle-button2{
+        margin-top: 32px;
+        top: .2rem;
+        right: 1rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button2 .bar2{
+        height: 4px;
+        width: 100%;
+        background-color:white;
+        border-radius: 10px;
+        border-radius: 5px;
+    }
+    .mainnav2 ul{
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        opacity: 50%;
+        text-align: center;
+    }
+    .mainnav2 li{
+        text-align: center;
+    }
+
+    .mainnav2 li:hover{
+        background-color: slategrey;
+        opacity: 50%;
+        color: white;
+    }
+    .mainnav2 li a{
+        padding: .5rem 1rem;
+    }
+
+    .mainnav2{
+        width: 100%;
+        display: none;
+    }
+    
+    .nav-item2 > a{
+        color:white;
+    }
+
+    .mainnav2.active{
+        display: flex;
+    }
+    .ecxlogo2{
+        /* float: left; */
+        margin-left: 30px;
+        margin-top: 20px;
+        display: none;
+    }
+
+    .ecxlogo3{
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 200px;
+    }
+
+    .userintrocontainer{
+        background: url(/landingimg/Rectangle\ 932.jpg);
+        height: 500px;
+        width: 100%;
+    }
+
+    .word1 > p{
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        color: #E0E0E0;
+        line-height: 140%;
+    }
+
+    .word > h4{
+        font-size: 16px;
+    }
+
+    .card-deck{
+        /* border: 2px solid black; */
+        flex-direction: column;
+    }
+
+    .card{
+        /* border: 2px solid red; */
+        padding-bottom: 30px;
+    }
+    
+    .maingallery{
+        display: none;
+    }
+
+
+    .row-one{
+        flex-direction: row;
+    }
+
+    .row-two{
+        flex-direction: row;
+    }
+
+    .griditem3{
+        display: none;
+    }
+
+    .griditem7{
+        display: none;
+    }
+
+    .maingallery2{
+        height: 600px;
+        /* border: 2px solid black; */
+        align-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .row-one1{
+   
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        padding-left: 9%;
+    }
+    
+    .row-two1{ 
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid yellow; */
+        padding-right: 9%;
+    }
+
+    #ecx7{
+        background-image: url(/landingimg/Rectangle\ 17.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #ecx10{
+        background-image: url(/landingimg/Rectangle\ 23.png);
+        background-size: cover;
+        background-position: center;
+    }
+    #ecx9{
+        background-image: url(/landingimg/Rectangle\ 20.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .griditem10{
+    
+        width: 90%;
+        height: 350px;
+        border-radius: 20px;
+        margin: 15px;
+        /* background: #828282; */
+        transition: width 1s;
+    }
+
+    .griditem13{
+    
+        width: 90%;
+        height: 350px;
+        border-radius: 20px;
+        margin: 15px;
+        /* background: #828282; */
+        transition: width 1s;
+    }
+
+    .griditem12{
+    
+        width: 90%;
+        height: 250px;
+        border-radius: 20px;
+        margin: 15px;
+        /* background: #828282; */
+        transition: width 1s;
+    }
+
+    .griditem11{
+        margin-top: 50px;
+        display: block;
+    }
+    .griditem11 > a{
+        text-decoration: none;
+    }
+
+
 }
