@@ -98,6 +98,20 @@ body{
     font-size: 14px;
 }
 
+
+
+
+
+
+
+
+
+/* Gallery Container CSS */
+
+.gallerycontainer{
+    text-align: center;
+}
+
 .cardbtn1{
     width: 211px;
     height: 60px;
@@ -108,60 +122,6 @@ body{
     font-weight: bold;
     color: white;
     font-size: 14px;
-}
-
-.cardbtn2{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-.cardbtn3{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-.cardbtn4{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-.cardbtn5{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-/* Gallery Container CSS */
-
-.gallerycontainer{
-    text-align: center;
 }
 
 .row-one{
@@ -320,6 +280,30 @@ body{
     transition: width 1s;
 }
 
+.cardbtn3{
+    width: 211px;
+    height: 60px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: #38AFFE;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+}
+
+.cardbtn4{
+    width: 211px;
+    height: 60px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: #38AFFE;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+}
+
 /* Meet Student Container CSS */
 
 .meetstudentcontainer{
@@ -410,11 +394,38 @@ body{
     border-radius: 100px;
 }
 
+.cardbtn2{
+    width: 211px;
+    height: 60px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: #38AFFE;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* About Container CSS */
+
 .aboutcontainer{
     text-align: center;
     width: 80%;
     margin: 0 auto;
     align-content: center;
+}
+
+.cardbtn5{
+    width: 211px;
+    height: 60px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: #38AFFE;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
 }
 
 /* Footer Container CSS */
