@@ -647,7 +647,7 @@ body{
     }
 
     .userintrocontainer{
-        background: url(/landingimg/Rectangle\ 932.jpg);
+        background: url(landingimg/Rectangle\ 932.jpg);
         height: 500px;
         width: 100%;
     }
@@ -726,18 +726,18 @@ body{
     }
 
     #ecx7{
-        background-image: url(/landingimg/Rectangle\ 17.png);
+        background-image: url(landingimg/Rectangle\ 17.png);
         background-size: cover;
         background-position: center;
     }
 
     #ecx10{
-        background-image: url(/landingimg/Rectangle\ 23.png);
+        background-image: url(landingimg/Rectangle\ 23.png);
         background-size: cover;
         background-position: center;
     }
     #ecx9{
-        background-image: url(/landingimg/Rectangle\ 20.png);
+        background-image: url(landingimg/Rectangle\ 20.png);
         background-size: cover;
         background-position: center;
     }
