@@ -1,1025 +1,364 @@
-/* Body */
-body{
-    font-family:'Montserrat', sans-serif ;
-    margin: 0;
-    padding: 0;
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"); */
+
+body,
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Nav Bar  */
-.nav-item > a{
-    color: #6A6A6A;
-    margin-top: 15px;
+.header {
+  background: url(./landingimg/Rectangle\ 93.png);
+  height: 65vh;
+  max-height: 500px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
 }
 
-.mainnav{
-    float: right;
+.header::before,
+.team-img::before {
+  width: 100%;
+  content: "";
+  height: 100%;
+  background-color: rgba(0, 14, 45, 0.63);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.navcontainer{
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
+.header-text {
+  position: absolute;
+  width: 70%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 10;
+}
+.header-text h1 {
+  font-size: 3rem;
 }
 
-.toggle-button{
-    margin-top: 32px;
-    top: .75rem;
-    right: 1rem;
-    position: absolute;
+.word {
+  color: #6f6f6f;
+}
+
+.word1 {
+  color: white;
+  font-size: 23px;
+}
+.upto {
+  text-align: center;
+  width: 85vw;
+  margin: 1.5rem auto;
+}
+
+.btn {
+  width: 40%;
+  background-color: rgba(254, 64, 59, 1);
+  float: left;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0;
+  margin-bottom: 1.4rem !important;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2rem auto;
+}
+.cards {
+  border-radius: 15px;
+  width: 70%;
+  box-shadow: -1px 1px 3px 1px #5353535b;
+  margin: 1.5rem auto;
+  padding-bottom: 0.6rem;
+}
+.cards h5 {
+  font-weight: 600;
+}
+
+.cards img {
+  height: 40%;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.cards,
+.cards-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards-info,
+.card-text {
+  margin: 1rem;
+  text-align: left;
+  line-height: 1;
+}
+
+.cardbtn {
+  width: 40vw;
+  font-size: 0.5rem;
+  margin: 1rem;
+  padding: 0 0.6rem;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  background: #38affe;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s;
+}
+.cardbtn:hover {
+  background-color: #3a3939;
+}
+
+.gallerycontainer {
+  text-align: center;
+}
+
+.rows {
+  width: 95%;
+  margin: 10px auto;
+  text-align: center;
+  display: flex;
+}
+#ecx1,
+#ecx5,
+#ecx6 {
+  display: none;
+}
+
+.rows a {
+  width: 30%;
+  align-self: center;
+}
+.m1 {
+  width: 58%;
+}
+.m2 {
+  width: 42%;
+}
+#ecx1 {
+  background-image: url(landingimg/Rectangle\ 17.png);
+}
+
+#ecx2 {
+  background-image: url(landingimg/Rectangle\ 6.png);
+}
+#ecx3 {
+  background-image: url(landingimg/Rectangle\ 26.png);
+}
+#ecx4 {
+  background-image: url(landingimg/Rectangle\ 23.png);
+}
+#ecx5 {
+  background-image: url(landingimg/Rectangle\ 20.png);
+}
+#ecx6 {
+  background-image: url(landingimg/Welcome\ Image\ 2.png);
+}
+
+.griditems {
+  height: 40vh;
+  border-radius: 10px;
+  margin: 15px;
+  transition: 1s;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.testimonialcontainer {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  height: 80%;
+}
+.carousel-item {
+  transition: 1s ease;
+}
+.topstd {
+  display: flex;
+  flex-direction: row;
+}
+
+.ol {
+  color: black;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.twitter-card,
+.student-card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin: 2rem auto;
+  border-radius: 15px;
+}
+
+.student-card {
+  padding: 0.4rem 0.8rem 1rem 0.8rem;
+  box-shadow: -1px 1px 3px #fe413b5b;
+}
+
+.twitter-card {
+  box-shadow: -1px 1px 3px #00a6ff5d;
+  padding: 0.8rem;
+}
+.card-text {
+  font-size: 0.5rem;
+  line-height: 1.5;
+}
+
+.testimonial-container img {
+  border-radius: 50%;
+}
+
+.avatar-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.info-text {
+  padding-left: 0.3rem;
+}
+
+.info-text p {
+  font-size: 0.5rem;
+}
+
+.info-text > h3 {
+  font-size: 0.6rem;
+}
+
+.student-card img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -1.2rem;
+  left: 0;
+}
+.twitter-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.twittercontainer {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.container {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.team-img {
+  height: 50vh;
+  width: 90%;
+  margin: auto;
+  background-image: url(/landingimg/Rectangle\ 17.png);
+  position: relative;
+}
+.team-img::before {
+  background-color: rgba(0, 14, 45, 0.4);
+  border-radius: 10px;
+}
+.btncont {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .cards {
+    width: 30%;
+  }
+  .cardbtn {
+    width: 25vw;
+    font-size: 1rem;
+  }
+  .student-card img {
+    width: 105px;
+    height: 105px;
+    position: relative;
+    left: -1.5rem;
+  }
+  .twitter-card img {
+    width: 70px;
+    height: 70px;
+  }
+  .twitter-card,
+  .student-card {
+    width: 30%;
+  }
+
+  .twitter-card .info-text {
+    padding-left: 1rem;
+  }
+
+  .info-text > p {
+    font-size: 0.7rem;
+  }
+
+  .info-text > h3 {
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .student-card img {
+    top: -1rem;
+    left: -1.5rem;
+  }
+  .rows {
+    width: 88%;
+  }
+  .rows a {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
-
-.ecxlogo{
-    float: left;
-    margin-left: 30px;
-    margin-top: 5px;
-}
-
-/* Userintrocontainer Css */
-
-.userintrocontainer{
-    background: url(./landingimg/Rectangle\ 93.png);
-    height: 500px;
-    background-size: cover;
-    width: 100%;
-}
-
-.userintro{
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    color: white;
-}
-
-.word{
-    color: #6F6F6F;
-}
-
-.word1{
-    color: white;
-    font-size: 23px;
-}
-
-/* Upto Container Css */
-.upto{
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.btn{
-    width: 150px;
-    background-color: rgba(254, 64, 59, 1);
-    float: left;
-}
-
-.cardbtn{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-
-
-
-
-
-
-
-
-/* Gallery Container CSS */
-
-.gallerycontainer{
-    text-align: center;
-}
-
-.cardbtn1{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-.row-one{
-   
-    width: 80%;
-    margin: 10px auto;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-}
-
-.row-two{
-   
-    width: 80%;
-    margin: 10px auto;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-}
-
-.row-three{
-   
-    width: 80%;
-    margin: 10px auto;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-}
-
-
-.griditem1{
-    
+  }
+  .griditem1 {
     width: 50%;
-    height: 430px;
-    border-radius: 20px;
-    margin: 15px;
-    transition: width 1s;
-}
-.griditem2{
-    
+  }
+  .griditem1q {
     width: 25%;
-    height: 430px;
-    border-radius: 20px;
-    margin: 15px;
-    transition: width 1s;
-}
-
-.griditem3{
-    
-    width: 25%;
-    height: 430px;
-    border-radius: 20px;
-    margin: 15px;
-    transition: width 1s;
-}
-
-.griditem5{
-    
-    width: 25%;
-    height: 430px;
-    border-radius: 20px;
-    margin: 15px;
-    transition: width 1s;
-}
-
-.griditem6{
-    
-    width: 25%;
-    height: 430px;
-    border-radius: 20px;
-    margin: 15px;
-    transition: width 1s;
-}
-.griditem7{
-    
-    width: 50%;
-    height: 430px;
-    border-radius: 20px;
-    margin: 15px;
-    transition: width 1s;
-}
-
-.maingallery{
-    align-items: center;
-}
-
-#ecx1{
-    background-image: url(landingimg/Rectangle\ 93.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#ecx2{
-    background-image: url(landingimg/Rectangle\ 6.png);
-    background-size: cover;
-    background-position: center;
-}
-#ecx3{
-    background-image: url(landingimg/Rectangle\ 26.png);
-    background-size: cover;
-    background-position: center;
-}
-#ecx4{
-    background-image: url(landingimg/Rectangle\ 23.png);
-    background-size: cover;
-    background-position: center;
-}
-#ecx5{
-    background-image: url(landingimg/Rectangle\ 20.png);
-    background-size: cover;
-    background-position: center;
-}
-#ecx6{
-    background-image: url(landingimg/Welcome\ Image\ 2.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#ecx7{
-    background-image: url(landingimg/Rectangle\ 17.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.griditem11{
-    display: none;
-}
-
-
-/* Testimonial Container CSS */
-
-.testimonialcontainer{
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-/* MeetTeam Container CSS */
-
-.meetteamcontainer{
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.meetteamcontainer > img{
-    width:50%;
-}
-
-.griditem9{
-    
-    width: 100%;
-    height: 500px;
-    border-radius: 20px;
-    margin: 15px;
-    transition: width 1s;
-}
-
-.cardbtn3{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-.cardbtn4{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-/* Meet Student Container CSS */
-
-.meetstudentcontainer{
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    align-content: center;
-}
-
-
-
-.topstd{
-    display: flex;
-    flex-direction: row;
-}
-
-.stdword1{
-    margin-top: 55px;
-    margin-left: 110px;
-
-}
-
-.studentmain{
-    margin: 10px auto;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.stdcard{
-    width: 370px;
-    height: 370px;
-    margin: 15px;
-    position: absolute;
-    box-shadow: -0.41px 1.23px 1.64px 0.41px rgba(64, 123, 255, 0.25);
-    border-radius: 15.0625px;
-}
-
-.userintroing{
-    position: absolute;
-    z-index: 1;
-    margin-right: 310px;
-    margin-top: 20px;
-}
-
-.userintroing > img{
-    border-radius: 100px;
-}
-
-
-.stdcardcont{
-    margin: 10px auto;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 500px;
-    justify-content: center;
-}
-
-.stdcardbody{
-    margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #6F6F6F;
-}
-
-/* Twitter Container CSS */
-
-.twittercontainer{
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    align-content: center;
-}
-
-.userintroing2{
-    position: absolute;
-    z-index: 1;
-    margin-right: 250px;
-    margin-top: 30px;
-}
-
-.userintroing2 > img{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-}
-
-.cardbtn2{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-
-/* About Container CSS */
-
-.aboutcontainer{
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    align-content: center;
-}
-
-.cardbtn5{
-    width: 211px;
-    height: 60px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background: #38AFFE;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-}
-
-/* Footer Container CSS */
-
-.footercontainer{
-    height: 400px;
-    text-align: center;
-    width: 80%;
-    margin: 80px auto;
-    align-content: center;
-}
-
-.footermain{
-    justify-content: center;
-    width: 100%;
-    align-content: center;
-}
-
-.upperfooter{
-    width: 100%;
-    height: 360px;
-    display: flex;
-    flex-direction: row;
-}
-
-.bottomfooter{
-    width: 100%;
-    height: 40px;
-}
-
-.footerword{
-    float: left;
-}
-
-.footerbtn{
-    float: right;
-}
-
-.footerbtn > img{
-    width: 20px;
-    height: 20px;
-}
-
-.ftbtn{
-    height: 40px;
-    width: 40px;
-    background-color: red;
-    border: none;
-    border-radius: 5px;
-    background: #FE403B;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
-}
-
-.ecxinfo{
-    width: 50%;
-    text-align: left;
-    padding-right: 40px;
-}
-
-.logo{
-    width: 30px;
-    height: 30px;
-}
-
-.quick{
-    width: 25%;
-    text-align: left;
-}
-
-.quick > p{
-    font-size: 15px;
-}
-
-.quick > a{
-    text-decoration: none;
-    color: slategray;
-}
-
-.contact{
-    width: 25%;
-    text-align: left;
-}
-.contact > p{
-    font-size: 15px;
-    opacity: 50%;
-}
-
-.contact > a{
-    text-decoration: none;
-    color: slategray;
-}
-
-
-.navbar-nav > a{
-    float: right;
-}
-
-.navcontainer2{
-    display: none;
-}
-
-
-
-.footercontainer2{
-    display: none;
-}
-
-
-.btncont{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    width: 500px;
-    margin: 0 auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media Query 1000px */
-
-
-@media only screen and (max-width:1000px){
-
-    /* Meet Student Container CSS */
-    .stdcardcont{
-        margin: 10px auto;
-        text-align: center;
-        display: flex;
-        width: 100%;
-        height: 500px;
-        justify-content: center;
-    }
-    .studentmain{
-        margin: 10px auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-    }
-    .userintroing{
-        position: absolute;
-        z-index: 1;
-        margin-right: 310px;
-        margin-top: 20px;
-    }
-    /* Nav bar for mobile testing for 400px max width */
-
-    /* Nav bar Container CSS but this properties are for the nav bar in the User Intro Container */
-    .toggle-button{
-        display: flex;
-    }
-    .navcontainer{
-        display: none;
-    }
-    .navcontainer2{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-    .toggle-button2{
-        margin-top: 32px;
-        top: .2rem;
-        right: 1rem;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
-    }
-    
-    .toggle-button2 .bar2{
-        height: 4px;
-        width: 100%;
-        background-color:white;
-        border-radius: 10px;
-        border-radius: 5px;
-    }
-    .mainnav2 ul{
-        flex-direction: column;
-        width: 100%;
-        background-color: black;
-        opacity: 50%;
-        text-align: center;
-    }
-    .mainnav2 li{
-        text-align: center;
-    }
-
-    .mainnav2 li:hover{
-        background-color: slategrey;
-        opacity: 50%;
-        color: white;
-    }
-    .mainnav2 li a{
-        padding: .5rem 1rem;
-    }
-
-    .mainnav2{
-        width: 100%;
-        display: none;
-    }
-    
-    .nav-item2 > a{
-        color:white;
-    }
-
-    .mainnav2.active{
-        display: flex;
-    }
-    .ecxlogo2{
-        margin-left: 30px;
-        margin-top: 20px;
-        display: none;
-    }
-
-    .ecxlogo3{
-        margin-left: 30px;
-        margin-top: 20px;
-        width: 200px;
-    }
-
-    .userintrocontainer{
-        background: url(landingimg/Rectangle\ 932.jpg);
-        height: 500px;
-        width: 100%;
-    }
-
-
-    .word > h4{
-        font-size: 16px;
-    }
-
-    /* Up to Container */
-
-    .word1 > p{
-        font-size: 16px;
-        font-weight: normal;
-        font-style: normal;
-        color: #E0E0E0;
-        line-height: 140%;
-    }
-
-    .card-deck{
-        flex-direction: column;
-    }
-
-    .card-deck{
-        width: 70%;
-        margin: 0 auto;
-    }
-
-    .card{
-        padding-bottom: 30px;
-    }
-
-    .cardbtn{
-        width: 150px;
-        height: 40px;
-        border-radius: 15px;
-        outline: none;
-        border: none;
-        background: #38AFFE;
-        font-weight: bold;
-        color: white;
-        font-size: 14px;
-    }
-
-
-    /* Gallery Container CSS */
-    
-    .maingallery{
-        display: none;
-    }
-
-
-    .row-one{
-        flex-direction: row;
-    }
-
-    .row-two{
-        flex-direction: row;
-    }
-
-    .griditem3{
-        display: none;
-    }
-
-    .griditem7{
-        display: none;
-    }
-
-    .maingallery2{
-        height: 600px;
-        align-content: center;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .row-one1{
-   
-        width: 50%;
-        margin: 10px auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        padding-left: 9%;
-    }
-    
-    .row-two1{ 
-        width: 50%;
-        margin: 10px auto;
-        text-align: center;
-        display: flex;
-        padding-right: 9%;
-    }
-
-    #ecx7{
-        background-image: url(landingimg/Rectangle\ 17.png);
-        background-size: cover;
-        background-position: center;
-    }
-
-    #ecx10{
-        background-image: url(landingimg/Rectangle\ 23.png);
-        background-size: cover;
-        background-position: center;
-    }
-    #ecx9{
-        background-image: url(landingimg/Rectangle\ 20.png);
-        background-size: cover;
-        background-position: center;
-    }
-
-    .griditem10{
-    
-        width: 90%;
-        height: 350px;
-        border-radius: 20px;
-        margin: 15px;
-        transition: width 1s;
-    }
-
-    .griditem13{
-    
-        width: 90%;
-        height: 350px;
-        border-radius: 20px;
-        margin: 15px;
-        transition: width 1s;
-    }
-
-    .griditem12{
-    
-        width: 90%;
-        height: 250px;
-        border-radius: 20px;
-        margin: 15px;
-        transition: width 1s;
-    }
-
-    .griditem11{
-        margin-top: 50px;
-        display: block;
-    }
-    .griditem11 > a{
-        text-decoration: none;
-    }
-
-        
-    .cardbtn1{
-        width: 150px;
-        height: 40px;
-        border-radius: 15px;
-        outline: none;
-        border: none;
-        background: #38AFFE;
-        font-weight: bold;
-        color: white;
-        font-size: 12px;
-    }
-
-    /* About Container CSS */
-
-    .aboutcontainer{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        align-content: center;
-    }
-
-    .cardbtn5{
-        width: 150px;
-        height: 40px;
-        border-radius: 15px;
-        outline: none;
-        border: none;
-        background: #38AFFE;
-        font-weight: bold;
-        color: white;
-        font-size: 12px;
-    }
-
-    /* Meet Student Container CSS */
-
-    .meetstudentcontainer{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        align-content: center;
-    }
-
-    /* Meet Team Container CSS */
-
-    .meetteamcontainer{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .griditem9{
-        height: 300px;
-        width: 1440;
-    }
-
-    .cardbtn3{
-        width: 150px;
-        height: 40px;
-        border-radius: 15px;
-        outline: none;
-        border: none;
-        background: #38AFFE;
-        font-weight: bold;
-        color: white;
-        font-size: 12px;
-    }
-    
-    .cardbtn4{
-        width: 170px;
-        height: 40px;
-        border-radius: 15px;
-        outline: none;
-        border: none;
-        background: #38AFFE;
-        font-weight: bold;
-        color: white;
-        font-size: 12px;
-    }
-
-    /* Footer Container CSS */
-
-    .footercontainer{
-        display: none;
-    }
-
-    .footercontainer2{
-        height: 600px;
-        text-align: center;
-        width: 80%;
-        margin: 80px auto;
-        align-content: center;
-        display: flex;
-        border-top: 2px solid #008CD6;
-        padding-top: 20px;
-    }
-    .footermain2{
-        justify-content: center;
-        width: 100%;
-        align-content: center;
-    }
-    .upperfooter2{
-        width: 100%;
-        height: 360px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .bottomfooter2{
-        width: 100%;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-    }
-    .footerword2{
-        float: left;
-    }
-    .footerbtn2{
-        float: right;
-    }
-
-    .footerbtn2 > img{
-        width: 20px;
-        height: 20px;
-    }
-    
-    .ftbtn2{
-        height: 40px;
-        width: 40px;
-        background-color: red;
-        border: none;
-        border-radius: 5px;
-        background: #FE403B;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-        font-size: 25px;
-        font-weight: 700;
-        color: white;
-    }
-
-    .ecxinfo2{
-        width: 100%;
-        text-align: left;
-        padding-right: 40px;
-        margin-bottom: 40px;
-    }
-
-    .btmfooter{
-        margin-bottom: 50px;
-    }
-
-    .quick2{
-        width: 50%;
-        text-align: left;
-    }
-
-    .quick2 > p{
-        font-size: 15px;
-    }
-    
-    .quick2 > a{
-        text-decoration: none;
-        color: slategray;
-    }
-    
-
-    .contact2{
-        width: 50%;
-        text-align: left;
-    }
-
-    .contact2 > p{
-        font-size: 15px;
-        opacity: 50%;
-    }
-    
-    .contact2 > a{
-        text-decoration: none;
-        color: slategray;
-    }
-
-    .btncont{
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-        width: 340px;
-        margin: 0 auto;
-    }
-
-
-
-    /* Twitter Container CSS */
-    .cardbtn2{
-        width: 150px;
-        height: 40px;
-        border-radius: 15px;
-        outline: none;
-        border: none;
-        background: #38AFFE;
-        font-weight: bold;
-        color: white;
-        font-size: 12px;
-    }
-      
-
-
-
-
-
+  }
+  #ecx1,
+  #ecx5,
+  #ecx6 {
+    display: block;
+  }
 }
