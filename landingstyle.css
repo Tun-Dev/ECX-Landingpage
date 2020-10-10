@@ -1,14 +1,15 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"); */
-
-body,
 * {
-  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: white;
 }
 
 .header {
-  background: url(./landingimg/Rectangle\ 93.png);
+  background: url(../images/Rectangle\ 93.png);
   height: 65vh;
   max-height: 500px;
   background-size: 100% 100%;
@@ -38,9 +39,13 @@ body,
   transform: translate(-50%, -50%);
   color: white;
   z-index: 10;
+  padding: 2rem auto;
 }
 .header-text h1 {
-  font-size: 3rem;
+  font-size: 1.8rem;
+}
+.header-text p {
+  font-size: 0.75rem;
 }
 
 .word {
@@ -107,7 +112,7 @@ body,
 
 .cardbtn {
   width: 40vw;
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin: 1rem;
   padding: 0 0.6rem;
   height: 60px;
@@ -149,23 +154,23 @@ body,
   width: 42%;
 }
 #ecx1 {
-  background-image: url(landingimg/Rectangle\ 17.png);
+  background-image: url(../images/Rectangle\ 17.png);
 }
 
 #ecx2 {
-  background-image: url(landingimg/Rectangle\ 6.png);
+  background-image: url(../images/Rectangle\ 6.png);
 }
 #ecx3 {
-  background-image: url(landingimg/Rectangle\ 26.png);
+  background-image: url(../images/Rectangle\ 26.png);
 }
 #ecx4 {
-  background-image: url(landingimg/Rectangle\ 23.png);
+  background-image: url(../images/Rectangle\ 23.png);
 }
 #ecx5 {
-  background-image: url(landingimg/Rectangle\ 20.png);
+  background-image: url(../images/Rectangle\ 20.png);
 }
 #ecx6 {
-  background-image: url(landingimg/Welcome\ Image\ 2.png);
+  background-image: url(../images/Welcome\ Image\ 2.png);
 }
 
 .griditems {
@@ -207,10 +212,10 @@ body,
 }
 
 .carousel-control-next-icon {
-  background-image: url(landingimg/arrow-right.svg);
+  background-image: url(../images/arrow-right.svg);
 }
 .carousel-control-prev-icon {
-  background-image: url(landingimg/arrow-left.svg);
+  background-image: url(../images/arrow-left.svg);
 }
 .carousel-item,
 video {
@@ -323,7 +328,7 @@ video {
   height: 50vh;
   width: 90%;
   margin: auto;
-  background-image: url(landingimg/Rectangle\ 17.png);
+  background-image: url(../images/Rectangle\ 17.png);
   position: relative;
 }
 .team-img::before {
@@ -339,12 +344,18 @@ video {
 }
 
 @media only screen and (min-width: 1000px) {
+  .header-text h1 {
+    font-size: 3.2rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
   .cards {
     width: 30%;
   }
   .cardbtn {
     width: 25vw;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .student-card img {
     width: 105px;
