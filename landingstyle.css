@@ -77,7 +77,8 @@ body,
 }
 .cards {
   border-radius: 15px;
-  width: 70%;
+  width: 80%;
+  height: auto;
   box-shadow: -1px 1px 3px 1px #5353535b;
   margin: 1.5rem auto;
   padding-bottom: 0.6rem;
@@ -182,14 +183,50 @@ body,
   margin: 0 auto;
 }
 
+.carousel-wrapper {
+  width: 95vw;
+  margin: auto;
+  height: 100%;
+}
 .carousel-control-prev,
 .carousel-control-next {
+  display: none;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
   width: 10%;
-  height: 80%;
+  height: 70%;
+  z-index: 20;
+  opacity: 1;
 }
-.carousel-item {
+.carousel-control-prev {
+  left: -5rem;
+}
+.carousel-control-next {
+  right: -5rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url(landingimg/arrow-right.svg);
+}
+.carousel-control-prev-icon {
+  background-image: url(landingimg/arrow-left.svg);
+}
+.carousel-item,
+video {
+  width: 100%;
   transition: 1s ease;
 }
+.carousel-indicators li {
+  position: relative;
+  background-color: rgb(27, 27, 27);
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  z-index: 20;
+  bottom: -4rem;
+}
+
 .topstd {
   display: flex;
   flex-direction: row;
@@ -286,7 +323,7 @@ body,
   height: 50vh;
   width: 90%;
   margin: auto;
-  background-image: url(/landingimg/Rectangle\ 17.png);
+  background-image: url(landingimg/Rectangle\ 17.png);
   position: relative;
 }
 .team-img::before {
@@ -360,5 +397,12 @@ body,
   #ecx5,
   #ecx6 {
     display: block;
+  }
+  .carousel-wrapper {
+    width: 80vw;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: flex;
   }
 }
