@@ -1,14 +1,15 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"); */
-
-body,
 * {
-  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: white;
 }
 
 .header {
-  background: url(./landingimg/Rectangle\ 93.png);
+  background: url(../images/Rectangle\ 93.png);
   height: 65vh;
   max-height: 500px;
   background-size: 100% 100%;
@@ -38,9 +39,13 @@ body,
   transform: translate(-50%, -50%);
   color: white;
   z-index: 10;
+  padding: 2rem auto;
 }
 .header-text h1 {
-  font-size: 3rem;
+  font-size: 1.8rem;
+}
+.header-text p {
+  font-size: 0.75rem;
 }
 
 .word {
@@ -77,7 +82,8 @@ body,
 }
 .cards {
   border-radius: 15px;
-  width: 70%;
+  width: 80%;
+  height: auto;
   box-shadow: -1px 1px 3px 1px #5353535b;
   margin: 1.5rem auto;
   padding-bottom: 0.6rem;
@@ -106,7 +112,7 @@ body,
 
 .cardbtn {
   width: 40vw;
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin: 1rem;
   padding: 0 0.6rem;
   height: 60px;
@@ -148,23 +154,23 @@ body,
   width: 42%;
 }
 #ecx1 {
-  background-image: url(landingimg/Rectangle\ 17.png);
+  background-image: url(../images/Rectangle\ 17.png);
 }
 
 #ecx2 {
-  background-image: url(landingimg/Rectangle\ 6.png);
+  background-image: url(../images/Rectangle\ 6.png);
 }
 #ecx3 {
-  background-image: url(landingimg/Rectangle\ 26.png);
+  background-image: url(../images/Rectangle\ 26.png);
 }
 #ecx4 {
-  background-image: url(landingimg/Rectangle\ 23.png);
+  background-image: url(../images/Rectangle\ 23.png);
 }
 #ecx5 {
-  background-image: url(landingimg/Rectangle\ 20.png);
+  background-image: url(../images/Rectangle\ 20.png);
 }
 #ecx6 {
-  background-image: url(landingimg/Welcome\ Image\ 2.png);
+  background-image: url(../images/Welcome\ Image\ 2.png);
 }
 
 .griditems {
@@ -182,14 +188,50 @@ body,
   margin: 0 auto;
 }
 
+.carousel-wrapper {
+  width: 95vw;
+  margin: auto;
+  height: 100%;
+}
 .carousel-control-prev,
 .carousel-control-next {
+  display: none;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
   width: 10%;
-  height: 80%;
+  height: 70%;
+  z-index: 20;
+  opacity: 1;
 }
-.carousel-item {
+.carousel-control-prev {
+  left: -5rem;
+}
+.carousel-control-next {
+  right: -5rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/arrow-right.svg);
+}
+.carousel-control-prev-icon {
+  background-image: url(../images/arrow-left.svg);
+}
+.carousel-item,
+video {
+  width: 100%;
   transition: 1s ease;
 }
+.carousel-indicators li {
+  position: relative;
+  background-color: rgb(27, 27, 27);
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  z-index: 20;
+  bottom: -4rem;
+}
+
 .topstd {
   display: flex;
   flex-direction: row;
@@ -286,7 +328,7 @@ body,
   height: 50vh;
   width: 90%;
   margin: auto;
-  background-image: url(/landingimg/Rectangle\ 17.png);
+  background-image: url(../images/Rectangle\ 17.png);
   position: relative;
 }
 .team-img::before {
@@ -302,12 +344,18 @@ body,
 }
 
 @media only screen and (min-width: 1000px) {
+  .header-text h1 {
+    font-size: 3.2rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
   .cards {
     width: 30%;
   }
   .cardbtn {
     width: 25vw;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .student-card img {
     width: 105px;
@@ -360,5 +408,12 @@ body,
   #ecx5,
   #ecx6 {
     display: block;
+  }
+  .carousel-wrapper {
+    width: 80vw;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: flex;
   }
 }
